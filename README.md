@@ -43,11 +43,57 @@ Hola mundo! Esto es una plantilla
 
 \end{document}
 ```
+## Clase - Martes 1/03
+### Objetivos
+* Secciones e índice.
+* Incluir imágenes
 
-## Tabla de comandos
+### Secciones e índice
 
-| Comando         | ¿Qué hace?           |
-|-----------------|----------------------|
-| `\\`,`\newline` | Nuevo salto de línea |
-| `\maketitle`    | Imprime el título    |
+| Comando         |
+|-----------------|
+| `\chapter{}`    |
+| `\section{}`    |
+| `\subsection{}`    |
+| `\subsubsection{}`    | 
+| `\paragraph{}`    | 
+| `\subparagraph{}`    | 
+
+Para imprimir el índice utilizamos `\tableofcontents`. Además, para que los
+títulos salgan en español debemos añadir un paquete nuevo a la plantilla >
+`\usepackage[spanish]{babel}`
+
+### Imágenes
+* Necesitamos el paquete `\usepackage{graphicx}` > `\includegraphics[<opciones>]{<path>}`
+* Rutas
+
+#### Entorno flotante
+`\begin[<options>]{figure} \end{figure}`
+
+|Parámetro | ¿Qué hace?|
+|----------|-----------|
+|h| Le indicamos que ponga la imagen aquı́.|
+|t| Le indicamos que lo ponga en la parte superior de la página.|
+|b| Le indicamos que lo ponga en la parte inferior de la página.|
+|p| Le indicamos que coloque los objetos flotantes en una página.|
+|!| Le indicamos que ignore las reglas internas de posicionamiento.|
+
+Posicionar la imagen dentro del entorno flotante
+
+|Parámetro | ¿Qué hace?|
+|----------|-----------|
+|`\centering`| Centrado.|
+|`\raggedleft`| Izquierda.|
+|`\raggedright`| Derecha.|
+
+* `\caption{}` > Título a la imagen
+
+#### Opciones de imagen
+
+|Parámetro | ¿Qué hace?|
+|----------|-----------|
+|angle | Rota la imagen.|
+|width | Ajusta la imagen al ancho.|
+|height| Ajusta la imagen a la altura.|
+|scale | Escala la imagen al tamaño.|
 
