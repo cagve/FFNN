@@ -1,5 +1,4 @@
 # Filosofía y nuevas tecnologías - Curso 21/22
-
 ## Instalación 
 ### Miktex
 La distribución que vamos a utilizar en clase es Miktex porque integra la
@@ -108,6 +107,91 @@ ello utilizamos
 
 \end{wrapfigure}
 ```
+
+## Referencias cruzadas
+La **referencia cruzada** se utiliza en un texto para hacer alusi ́on a una parte del texto, a
+una tabla, o a una gráfica que se encuentra en otra parte del documento. Dos comandos
+
+```
+\label{} ------------> Crea la referencia
+
+\ref{}   ------------> Llama a la referencia
+```
+
+**Ejemplo 1**
+* Creamos un documento con dos secciones:
+1. Introducción
+2. Lógica modal
+3. Lógica epistémica
+
+* Creamos las etiquetas para cada sección
+```
+\label{sec:intro}
+\label{sec:modal}
+\label{sec:epistémica}
+```
+* Llamamos a las secciones en la primera sección
+
+Podemos llamar a figuras, tablas, ecuaciones, enumeraciones, etc.
+
+## Bibliografía
+BIBTEX > Herramienta hermana de LATEX para la gestión de bibliografía.
+
+* Tipo de archivo: .bib
+* Sintaxis: 
+  
+```
+@<tipo-de-documento>{<key>,
+	<entrada>={<nombre>},
+	<entrada>={<nombre>},
+	<entrada>={<nombre>},
+	<entrada>={<nombre>},
+	<entrada>={<nombre>}
+}
+```
+	* Tipos de documentos:
+		* article
+		* book
+		* phdthesis
+	* Entradas: 
+		* title: 
+		* author:
+		* edition: 
+		* pages: 
+		* address: 
+		* publisher: 
+		* year: 
+* Bibtex en latex >	  
+	* \bibliographystyle{unsrt} 
+	* \bibliography{mibiblio} 
+
+### Natbib
+Este paquete nos proporciona un manejo aún más preciso sobre la bibliografía.
+Añade tres nuevos estilos de bibliografía:
+1. plainnat
+2. abbrvnat
+3. unsrtnat
+
+Añade diferentes estilos de cita
+1. `\citet{}` > Cita textual
+2. `\citep{}` > Cita paréntesis
+Si queremos añadir información adicional podemos hacerlo entre corchetes. `\citet[chap. 2]{Descartes2022metodo}`.
+Otros usos que podemos darle son:
+1. `\citeauthor{}`
+2. `\citeyear`
+
+### Citar APA
+#### Natbib
+1. Descargamos el archivo bst en nuestra carpeta
+2. `\bibliographystyle{apa}`
+
+#### Apacite
+1. Cambiamos el paquete natbib por apacite.
+2. `\bibliographystyle{apacite}`
+
+### Citar Chicago
+1. Utilizamos el paquete `\usepackage{chicago}`
+2. `\bibliographystyle{chicago}`
 
 
 
