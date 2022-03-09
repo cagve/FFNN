@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{ulem}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+
+\title{Aprendiendo imágenes}
+\author{Carlos Aguilera Ventura}
+\date{\today}
+
+\begin{document}
+\maketitle \tableofcontents \listoffigures \newpage
+
+\section{Primeros pasos}
+\includegraphics[width=\textwidth]{logolatex.png}
+
+
+\section{Entornos flotantes}
+hola que tal
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=100pt]{word.png}
+\caption{Hola mundo}
+\end{figure}
+
+\section{Img y texto}
+\begin{wrapfigure}[5]{r}{0.4\textwidth}
+\includegraphics[width=100pt]{word.png}
+\caption{Hello world}
+\end{wrapfigure}
+
+
+empezaba ya a cansarse de estar sentada con su
+hermana a la orilla del río, sin tener nada que hacer:
+había echado un par de ojeadas al libro que su hermana
+Así pues, estaba pensando ({\tiny y pensar le costaba cierto
+    esfuerzo, porque el calor del día la había dejado
+soñolienta y atontada}) si el placer de tejer una
+guirnalda de margaritas la compensaría del trabajo de
+levantarse y coger las margaritas, cuando de pronto
+saltó cerca de ella un Conejo Blanco de ojos rosados.
+
+
+
+
+
+
+\end{document}
