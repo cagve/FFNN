@@ -1,4 +1,5 @@
 # Filosofía y nuevas tecnologías - Curso 21/22
+## Índice
 <!-- vim-markdown-toc GFM -->
 
 * [Instalación](#instalación)
@@ -17,9 +18,9 @@
 		* [Apacite](#apacite)
 	* [Citar Chicago](#citar-chicago)
 * [Presentaciones](#presentaciones)
-* [Frame](#frame)
-* [Bloques](#bloques)
-* [Temas y estilo](#temas-y-estilo)
+	* [Frame](#frame)
+	* [Bloques](#bloques)
+	* [Temas y estilo](#temas-y-estilo)
 	* [Estilos genéricos](#estilos-genéricos)
 
 <!-- vim-markdown-toc -->
@@ -66,8 +67,6 @@ Hola mundo! Esto es una plantilla
 \end{document}
 ```
 ## Secciones
-
-
 | Comando         |
 |-----------------|
 | `\chapter{}`    |
@@ -234,7 +233,7 @@ Para poder crear presentaciones lo primero que debemos hacer es modificar el tip
 
 \end{document}
 ```
-## Frame
+### Frame
 Para crear nuevas diapositivas se debe utilizar el entorno `frame`. Toda la
 información que queramos incluir se debe realizar dentro de cada frame.
 ```
@@ -243,7 +242,7 @@ información que queramos incluir se debe realizar dentro de cada frame.
 \end{frame}
 ```
 
-## Bloques
+### Bloques
 En beamer podemos generar bloques de texto. Beamer incorpora algunos entornos
 por defecto como: _theorem_, _lemma_, _proof_, _corollary_ o _example_. De esta
 forma si queremos incluir un nuevo ejemplo lo pondremos de la siguiente forma:
@@ -258,7 +257,7 @@ Además de estos, podemos utilizar bloques de textos genéricos con el entorno `
 	Esto es un bloque de texto.
 \end{block}
 ```
-## Temas y estilo
+### Temas y estilo
 Para consultar los diferentes temas ir a [galería](https://deic.uab.cat/~iblanes/beamer_gallery/) o a [galeria2](https://hartwork.org/beamer-theme-matrix/)
 Los comandos que podemos utilizar son:
 

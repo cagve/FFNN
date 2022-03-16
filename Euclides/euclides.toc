@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Motivación}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Punto de partida}{3}{0}{1}
+\beamer@sectionintoc {2}{Resultados}{6}{0}{2}
