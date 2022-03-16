@@ -187,13 +187,76 @@ Otros usos que podemos darle son:
 
 #### Apacite
 1. Cambiamos el paquete natbib por apacite.
+2. `\usepackage[natbibapa]{apacite}`
 2. `\bibliographystyle{apacite}`
+
 
 ### Citar Chicago
 1. Utilizamos el paquete `\usepackage{chicago}`
 2. `\bibliographystyle{chicago}`
 
 
+## Presentaciones
+Para poder crear presentaciones lo primero que debemos hacer es modificar el tipo de documento para que sea tipo `beamer`.
+```
+\documentclass{beamer}
+
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\end{document}
+```
+## Frame
+Para crear nuevas diapositivas se debe utilizar el entorno `frame`. Toda la
+información que queramos incluir se debe realizar dentro de cada frame.
+```
+\begin{frame}
+	\titlepage
+\end{frame}
+```
+
+## Bloques
+En beamer podemos generar bloques de texto. Beamer incorpora algunos entornos
+por defecto como: _theorem_, _lemma_, _proof_, _corollary_ o _example_. De esta
+forma si queremos incluir un nuevo ejemplo lo pondremos de la siguiente forma:
+```
+\begin{example}
+	Esto es un ejemplo
+\end{example}
+```
+Además de estos, podemos utilizar bloques de textos genéricos con el entorno `block`. IMP. Necesitan tener un título.
+```
+\begin{block}{Título del bloque}
+	Esto es un bloque de texto.
+\end{block}
+```
+## Temas y estilo
+Para consultar los diferentes temas ir a [galería](https://deic.uab.cat/~iblanes/beamer_gallery/) o a [galeria2](https://hartwork.org/beamer-theme-matrix/)
+Los comandos que podemos utilizar son:
+
+| Comando            |
+|--------------------|
+| `\usetheme{}`      |
+| `\usecolortheme{}` |
+| `\usefonttheme{}`  |
+
+### Estilos genéricos
+* **Temas antiguos** bars, boxes, classic, default, lined, plain, shadow,
+sidebar, sidebardark, sidebardarktab, sidebartab, split, tree,
+treebars
+* **Temas con navegación**: default, boxes, Bergen, Madrid,
+Pittsburgh, Rochester
+* **Temas en árbol:** Antibes, JuanLesPins, Montpellier.
+* **Temas con TOC:** Berkeley, PaloAlto, Goettingen, Marburg,
+Hannover
+* **Temas con mini navegación:** Berlin, Ilmenau, Dresden, Darmstadt,
+Frankfurt, Singapore, Szeged
+* **Temas con títulos y subtítulos:** Copenhagen, Luebeck, Malmoe,
+Warsaw
 
 
 
