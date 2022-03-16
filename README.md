@@ -1,4 +1,28 @@
 # Filosofía y nuevas tecnologías - Curso 21/22
+<!-- vim-markdown-toc GFM -->
+
+* [Instalación](#instalación)
+	* [Miktex](#miktex)
+	* [Texmaker](#texmaker)
+* [Creación primera plantilla](#creación-primera-plantilla)
+* [Secciones](#secciones)
+* [Imágenes](#imágenes)
+	* [Entorno flotante](#entorno-flotante)
+	* [Texto alrededor de imagen](#texto-alrededor-de-imagen)
+* [Referencias cruzadas](#referencias-cruzadas)
+* [Bibliografía](#bibliografía)
+	* [Natbib](#natbib)
+	* [Citar APA](#citar-apa)
+		* [Natbib](#natbib-1)
+		* [Apacite](#apacite)
+	* [Citar Chicago](#citar-chicago)
+* [Presentaciones](#presentaciones)
+* [Frame](#frame)
+* [Bloques](#bloques)
+* [Temas y estilo](#temas-y-estilo)
+	* [Estilos genéricos](#estilos-genéricos)
+
+<!-- vim-markdown-toc -->
 ## Instalación 
 ### Miktex
 La distribución que vamos a utilizar en clase es Miktex porque integra la
@@ -70,7 +94,7 @@ utilizando entornos flotantes. Entre corchetes podemos utilizar alguna de estas 
 |height| Ajusta la imagen a la altura.|
 |scale | Escala la imagen al tamaño.|
 
-#### Entorno flotante
+### Entorno flotante
 ```
 \begin[<options>]{figure} 
 \centering
