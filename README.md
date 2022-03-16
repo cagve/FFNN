@@ -22,6 +22,9 @@
 	* [Bloques](#bloques)
 	* [Temas y estilo](#temas-y-estilo)
 	* [Estilos genéricos](#estilos-genéricos)
+* [Portada](#portada)
+	* [Comandos útiles](#comandos-útiles)
+	* [Colores](#colores)
 
 <!-- vim-markdown-toc -->
 ## Instalación 
@@ -281,5 +284,29 @@ Frankfurt, Singapore, Szeged
 * **Temas con títulos y subtítulos:** Copenhagen, Luebeck, Malmoe,
 Warsaw
 
+## Portada 
+Hemos visto como crear una portada a partir de información genérica, sin
+embargo, pueden darse casos en los que queramos hacer algo más complejo. Para
+ello podemos utilizar el entorno `titlepage`. Esto nos genera un entorno
+flotante en toda la página. Dentro de ella podemos introducir la información
+que queramos. Para ello debemos generar bloques de texto para cada "párrafo".
 
+### Comandos útiles
 
+| Comando                       | Función                                              |
+|-------------------------------|------------------------------------------------------|
+| `\vspace{2cm}`                | Genera un espacio vertical de 2cm                    |
+| `\vfill`                      | Genera un bloque en blanco hasta el siguiente bloque |
+| `\rule{<longitud>}{<grosor>}` | Genera una línea con una longitud y un grosor.       |
+| `\hrule`                      | Genera una línea horizontal.       |
+
+### Colores
+Para poner la página de un color debemos utilizar el paquete
+`\usepackage{xcolor}`. Podemos utilizar los colores que vienen predefinidos en
+el paquete ([véase](https://en.wikibooks.org/wiki/LaTeX/Colors)). Sino, podemos definir
+colores utilizamos el comando `\definecolor{<nombre>}{<tipo-de-color}{<valores>}`. 
+
+| Comando            | Función                                              |
+|--------------------|------------------------------------------------------|
+| `\pagecolor{blue}` | Cambia el color de fondo de la página                |
+| `\color{white}`    | Cambia el color del texto                            |
