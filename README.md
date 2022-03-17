@@ -6,6 +6,10 @@
 	* [Miktex](#miktex)
 	* [Texmaker](#texmaker)
 * [Creación primera plantilla](#creación-primera-plantilla)
+* [Modificadores básicos](#modificadores-básicos)
+	* [Estilo](#estilo)
+	* [Alinear de texto](#alinear-de-texto)
+	* [Tamaño de texto](#tamaño-de-texto)
 * [Secciones](#secciones)
 * [Imágenes](#imágenes)
 	* [Entorno flotante](#entorno-flotante)
@@ -69,6 +73,45 @@ Hola mundo! Esto es una plantilla
 
 \end{document}
 ```
+## Modificadores básicos
+### Estilo
+| Comando     | Función    |
+| ----------- | ---------- |
+| `\textbf{}` | Negrita    |
+| `\textit{}` | Cursiva    |
+| `\textsc{}` | Versalitas |
+| `\texttt{}` | A máquina  |
+
+### Alinear de texto
+| Comando                               | Función    |
+| ------------------------------------- | ---------- |
+| `\begin{center} \end{center}`         | Negrita    |
+| `\begin{flushright} \end{flushright}` | Negrita    |
+| `\begin{flushleft} \end{flushleft}`   | Negrita    |
+
+### Tamaño de texto
+| Comando         |
+|-----------------|
+| `\tiny`         |
+| `\scriptsize`   |
+| `\footnotesize` |
+| `\small`        |
+| `\normalsize`   |
+| `\large`        |
+| `\Large`        |
+| `\LARGE`        |
+| `\huge`         |
+| `\Huge `        |
+
+Importante, para camiar el tamaño de un bloque de texto, debemos incluirlo entre llaves. Como en el siguiente ejemplo.
+```
+{\Huge LaTeX is a high-quality typesetting system}; it includes features designed for
+the production of technical and scientific documentation. LaTeX is the de facto
+standard for the communication and publication of scientific documents. LaTeX
+is available as free software.
+```
+
+
 ## Secciones
 | Comando         |
 |-----------------|
