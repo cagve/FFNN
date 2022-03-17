@@ -304,9 +304,21 @@ que queramos. Para ello debemos generar bloques de texto para cada "párrafo".
 Para poner la página de un color debemos utilizar el paquete
 `\usepackage{xcolor}`. Podemos utilizar los colores que vienen predefinidos en
 el paquete ([véase](https://en.wikibooks.org/wiki/LaTeX/Colors)). Sino, podemos definir
-colores utilizamos el comando `\definecolor{<nombre>}{<tipo-de-color}{<valores>}`. 
+colores utilizamos el comando
+`\definecolor{<nombre>}{<tipo-de-color}{<valores>}`. 
 
-| Comando            | Función                                              |
-|--------------------|------------------------------------------------------|
-| `\pagecolor{blue}` | Cambia el color de fondo de la página                |
-| `\color{white}`    | Cambia el color del texto                            |
+| Comando            | Función                                                                      |
+|--------------------|------------------------------------------------------------------------------|
+| `\pagecolor{blue}` | Cambia el color de fondo de la página                                        |
+| `\color{white}`    | Cambia el color del texto. Importante, el texto debe estar incluido entre {} |
+
+Imaginemos que tenemos el siguiente texto y queremos colorear la primera frase.
+Lo que debemos hacer es englobar entre llaves todo lo que queremos colorear.
+Después añadimos el comando `\color{red}` dentro del bloque de texto.
+
+```
+{\color{red} LaTeX is a high-quality typesetting system}; it includes features designed for
+the production of technical and scientific documentation. LaTeX is the de facto
+standard for the communication and publication of scientific documents. LaTeX
+is available as free software.
+```
