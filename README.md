@@ -75,12 +75,13 @@ Hola mundo! Esto es una plantilla
 ```
 ## Modificadores básicos
 ### Estilo
-| Comando     | Función    |
-| ----------- | ---------- |
-| `\textbf{}` | Negrita    |
-| `\textit{}` | Cursiva    |
-| `\textsc{}` | Versalitas |
-| `\texttt{}` | A máquina  |
+| Comando        | Función    |
+| -----------    | ---------- |
+| `\textbf{}`    | Negrita    |
+| `\textit{}`    | Cursiva    |
+| `\textsc{}`    | Versalitas |
+| `\texttt{}`    | A máquina  |
+| `\underline{}` | Subrayado* |
 
 ### Alinear de texto
 | Comando                               | Función    |
